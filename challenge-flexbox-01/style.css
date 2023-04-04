@@ -89,3 +89,7 @@ h1 {
 .btn:focus {
     opacity: .75; 
 }
+
+.purple-text {
+    color: #87629A;
+}
