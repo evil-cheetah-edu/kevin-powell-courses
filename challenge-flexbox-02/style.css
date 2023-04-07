@@ -78,9 +78,6 @@ h1 {
 
 main {
     padding: 3em;
-
-    display: flex;
-    gap: 1rem;
 }
 
 article,
