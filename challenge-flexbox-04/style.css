@@ -81,3 +81,35 @@ article {
     display: flex;
     gap: 3em;
 }
+
+
+.additional-item {
+    color: white;
+
+    padding: 4em 8em;
+
+    display: flex;
+    gap: 3em;
+}
+
+.additional-item--one {
+    background-color: #222C2A;
+}
+
+.additional-item--two {
+    background-color: #824936;
+    flex-direction: row-reverse;
+}
+
+.additional-item--title {
+    margin-bottom: 0.75em;
+
+    font-family: 'Playfair Display';
+    font-weight: 900;
+    font-size: 2.25rem;
+}
+
+.additional-item--description {
+    font-family: 'Roboto';
+    font-size: 1.3125rem;
+}
