@@ -9,7 +9,6 @@
     margin: 0;
 }
 
-
 header {
     min-height: 80vh;
     background-color: #F3EED9;
@@ -45,4 +44,40 @@ header {
 
     text-transform: uppercase;
     letter-spacing: 0.5em;
+}
+
+main {
+    max-width: 70.5rem;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+article {
+    padding: 5em;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3em;
+}
+
+.article-header {
+    color: #824936;
+
+    font-family: 'Playfair Display';
+    font-weight: 900;
+    font-size: 2.25rem;
+}
+
+.article-text {
+    font-family: 'Roboto';
+    font-size: 1.3125rem;
+
+    display: flex;
+    gap: 3em;
 }
