@@ -163,4 +163,8 @@ article {
     .additional-item--two {
         flex-direction: row-reverse;
     }
+
+    .additional-item--title {
+        text-align: start;
+    }
 }
