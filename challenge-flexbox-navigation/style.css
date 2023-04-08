@@ -169,6 +169,11 @@ header {
     border-radius: 1em;
 }
 
+.nav__link:hover,
+.nav__link:focus {
+    opacity: 0.65;
+}
+
 
 
 .logo {
