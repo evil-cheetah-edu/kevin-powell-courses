@@ -12,7 +12,9 @@
 }
 
 img {
+    display: inline-block;
     max-width: 100%;
+    margin: 0 auto;
 }
 
 header {
@@ -34,23 +36,26 @@ header {
 
     text-align: center;
 }
-/* 
+ 
 .header-title {
+    width: min(60%, 25rem);
     color: #824936;
 
     font-family: 'Playfair Display';
     font-weight: 900;
-    font-size: 3.75rem;
+    font-size: clamp(1.25rem, 3vw, 3.75rem);
 }
+
 
 .header-description {
     font-family: 'Roboto';
     font-weight: 300;
-    font-size: 1.125;
+    font-size: clamp(0.75rem, 2vw, 1.125rem);
 
     text-transform: uppercase;
     letter-spacing: 0.5em;
 }
+
 
 main {
     max-width: 70.5rem;
@@ -63,7 +68,7 @@ main {
 
 
 article {
-    padding: 5em;
+    padding: clamp(2em, 1.5vw, 5em);
 
     display: flex;
     flex-direction: column;
@@ -77,25 +82,30 @@ article {
 
     font-family: 'Playfair Display';
     font-weight: 900;
-    font-size: 2.25rem;
+    font-size: clamp(1.25rem, 3vw, 2.25rem);
+    text-align: center;
 }
 
 .article-text {
     font-family: 'Roboto';
-    font-size: 1.3125rem;
+    font-size: clamp(0.9rem, 2.5vw, 1.3125rem);
 
     display: flex;
-    gap: 3em;
+    flex-direction: column;
+    gap: 2em;
 }
 
-
 .additional-item {
+    padding: 
+        clamp(1em, 3vw, 4em)
+        clamp(3em, 3vw, 8em);
+    
     color: white;
 
-    padding: 4em 8em;
-
     display: flex;
-    gap: 3em;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1em;
 }
 
 .additional-item--one {
@@ -104,18 +114,40 @@ article {
 
 .additional-item--two {
     background-color: #824936;
-    flex-direction: row-reverse;
+
 }
 
 .additional-item--title {
     margin-bottom: 0.75em;
-
+    
     font-family: 'Playfair Display';
     font-weight: 900;
-    font-size: 2.25rem;
+    font-size: clamp(1.25rem, 3vw, 2.25rem);
+    text-align: center;
 }
 
 .additional-item--description {
     font-family: 'Roboto';
-    font-size: 1.3125rem;
-} */
+    font-size: clamp(0.9rem, 2.5vw, 1.3125rem);;
+} 
+
+
+.additional-item--image {
+    flex: 1 1;
+}
+
+
+@media screen and (min-width: 45rem) {
+    .article-text {
+        flex-direction: row;
+        gap: 3em;
+    }
+
+    .additional-item--one {
+        flex-direction: row;
+    }
+
+    .additional-item--two {
+        flex-direction: row-reverse;
+    }
+}
