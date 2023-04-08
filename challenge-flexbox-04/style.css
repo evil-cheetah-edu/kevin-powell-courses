@@ -11,6 +11,19 @@
     margin: 0;
 }
 
+
+:root {
+    --text-xl: clamp(1.25rem, 3vw,   3.75rem);
+    --text-l:  clamp(1.25rem, 3vw,   2.25rem);
+    --text-m:  clamp(0.9rem,  2.5vw, 1.3125rem);
+    --text-s:  clamp(0.75rem, 2vw,   1.125rem);
+
+    --main-light: #F3EED9;
+    --main-dark: #824936;
+    --accent-dark: #222C2A;
+}
+
+
 img {
     display: inline-block;
     max-width: 100%;
@@ -19,7 +32,7 @@ img {
 
 header {
     min-height: 80vh;
-    background-color: #F3EED9;
+    background-color: var(--main-light);
 
     display: flex;
     justify-content: center;
@@ -39,18 +52,18 @@ header {
  
 .header-title {
     width: min(60%, 25rem);
-    color: #824936;
+    color: var(--main-dark);
 
     font-family: 'Playfair Display';
     font-weight: 900;
-    font-size: clamp(1.25rem, 3vw, 3.75rem);
+    font-size: var(--text-xl);
 }
 
 
 .header-description {
     font-family: 'Roboto';
     font-weight: 300;
-    font-size: clamp(0.75rem, 2vw, 1.125rem);
+    font-size: var(--text-s);
 
     text-transform: uppercase;
     letter-spacing: 0.5em;
@@ -78,17 +91,17 @@ article {
 }
 
 .article-header {
-    color: #824936;
+    color: var(--main-dark);
 
     font-family: 'Playfair Display';
     font-weight: 900;
-    font-size: clamp(1.25rem, 3vw, 2.25rem);
+    font-size: var(--text-l);
     text-align: center;
 }
 
 .article-text {
     font-family: 'Roboto';
-    font-size: clamp(0.9rem, 2.5vw, 1.3125rem);
+    font-size: var(--text-m);
 
     display: flex;
     flex-direction: column;
@@ -109,11 +122,11 @@ article {
 }
 
 .additional-item--one {
-    background-color: #222C2A;
+    background-color: var(--accent-dark);
 }
 
 .additional-item--two {
-    background-color: #824936;
+    background-color: var(--main-dark);
 
 }
 
@@ -122,13 +135,13 @@ article {
     
     font-family: 'Playfair Display';
     font-weight: 900;
-    font-size: clamp(1.25rem, 3vw, 2.25rem);
+    font-size: var(--text-m);
     text-align: center;
 }
 
 .additional-item--description {
     font-family: 'Roboto';
-    font-size: clamp(0.9rem, 2.5vw, 1.3125rem);;
+    font-size: var(--text-m);
 } 
 
 
