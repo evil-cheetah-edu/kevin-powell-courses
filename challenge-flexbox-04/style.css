@@ -11,6 +11,10 @@
     margin: 0;
 }
 
+img {
+    max-width: 100%;
+}
+
 header {
     min-height: 80vh;
     background-color: #F3EED9;
@@ -30,7 +34,7 @@ header {
 
     text-align: center;
 }
-
+/* 
 .header-title {
     color: #824936;
 
@@ -114,4 +118,4 @@ article {
 .additional-item--description {
     font-family: 'Roboto';
     font-size: 1.3125rem;
-}
+} */
