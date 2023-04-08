@@ -121,9 +121,16 @@ header {
    
    Works the same :) */
 .nav {
+    padding: 1em;
     visibility: hidden;
     height: 0;
     position: absolute;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
 }
 
 .nav--visible {
@@ -131,6 +138,37 @@ header {
     height: auto;
     position: relative;
 } 
+
+
+.nav__list {
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+}
+
+.nav__link {
+    font-weight: 600;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.nav__link--button {
+    background-color: white;
+    color: #136c72;
+
+    padding: 0.25em 0.75em;
+    border-radius: 1em;
+}
+
 
 
 .logo {
