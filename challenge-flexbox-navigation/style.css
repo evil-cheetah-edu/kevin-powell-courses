@@ -219,14 +219,24 @@ header {
     }
 
     .nav {
+        position: relative;
         visibility: visible;
+        
         display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
         height: auto;
+    }
+
+    .nav__list {
+        flex-direction: row;
     }
 
     .row {
         display: flex;
         justify-content: space-between;
+        align-items: center;
 
     }
 
