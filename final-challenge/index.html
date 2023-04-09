@@ -8,21 +8,32 @@
     <link rel="stylesheet" type="text/css" href="style.css" />
 </head>
 <body>
-    <header>
-        <nav>
-            <a href="#">
-                <img src="img/logo.svg" alt="Conquering responsive layouts logo">
-            </a>
+    <header class="primary-header flex">
+        <button 
+            class="primary-navigation--toggle" 
+            aria-label="open navigation"
+            aria-controls="primary-navigation"
+        >
+            <img src="img/hamburger.svg" alt="Hamburger icon">
+        </button>
 
-            <ul>
-                <li><a href="#">Home</a></li>
+        <div>
+            <img src="img/logo.svg" alt="Conquering responsive layouts logo">
+        </div>
+
+        <nav>
+            <ul
+                id="primary-navigation"
+                class="primary-navigation flex"
+                data-visible="false"
+            >
+                <li class="active"><a href="#">Home</a></li>
                 <li><a href="#">About</a></li>
                 <li><a href="#">Contact</a></li>
                 <li><a href="#">Sign In</a></li>
                 <li><a href="#">Sign Up</a></li>
             </ul>
-
-
+        </nav>
     </header>
 
     <main>
