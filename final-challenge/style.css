@@ -19,3 +19,18 @@
     padding: 0;
     margin: 0;
 }
+
+
+header {
+    background-color: var(--steel-blue-900);
+}
+
+.primary-navigation {
+    list-style: none;
+}
+
+/* Utility Classes */
+.flex {
+    display: flex;
+    gap: var(--gap, 1rem);
+}
