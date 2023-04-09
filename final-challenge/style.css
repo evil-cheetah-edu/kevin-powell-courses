@@ -1,0 +1,17 @@
+:root {
+    --white: #FFFFFF;
+    --grey-600: #6F737F;
+    --accent-600: #A59678; 
+
+    --steel-blue-800: #3B4050;
+    --steel-blue-900: #2E323F;
+}
+
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
