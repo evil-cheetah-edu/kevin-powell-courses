@@ -9,6 +9,11 @@
 
     --steel-blue-800: #3B4050;
     --steel-blue-900: #2E323F;
+
+    --font-oswald: 'Oswald', sans-serif;
+    --font-montserrat: 'Montserrat', sans-serif;
+
+    --font-size-m: 1.125rem;
 }
 
 
@@ -20,16 +25,65 @@
     margin: 0;
 }
 
+body {
+    height: 100vh;
+}
 
-header {
+/* --------- Header --------- */
+.primary-header {
+    padding: 1em;
+
+    font-family: var(--font-oswald);
+
     background-color: var(--steel-blue-900);
+
+    justify-content: space-between;
+    align-items: center;
 }
 
 .primary-navigation {
     list-style: none;
 }
 
-/* Utility Classes */
+.primary-navigation--toggle {
+    display: none;
+}
+
+.primary-navigation--link {
+    font-family: var(--font-oswald);
+    font-weight: 600;
+    font-size: var(--font-size-m);
+    text-transform: uppercase;
+    text-decoration: none;
+    
+    color: var(--white);
+}
+
+.primary-navigation--sign-up {
+    border-radius: 1em;
+    padding: 0.25em 0.75em;
+    background-color: var(--accent-600);
+}
+
+@media screen and (max-width: 35em)
+{
+    .primary-navigation--toggle {
+        display: block;
+        position: absolute;
+    
+        top: 1rem;
+        left: 1rem;
+    
+        background-color: transparent;
+        border: none;
+    
+        height: 2rem;
+        aspect-ratio: 1 / 1;
+    }
+}
+
+
+/* --------- Utility Classes --------- */
 .flex {
     display: flex;
     gap: var(--gap, 1rem);
