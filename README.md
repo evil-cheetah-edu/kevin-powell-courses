@@ -6,6 +6,11 @@ This repository has been created to hold the solutions for the assignments relat
 - [Kevin Powell | Personal Page](https://www.kevinpowell.co/)
 - [Kevin Powell | YouTube](https://www.youtube.com/@KevinPowell)
 
+## About This Branch
+The current branch is named `solutions`, housing the answers for the assignments given in the course. 
+
+If you wish to access the initial files, please navigate to the `starter-files` branch.
+
 ## Table of Content
 I. [Conquering Responsive Layouts](./Conquering%20Responsive%20Layouts/)
   1. [General - Challenge 1](./Conquering%20Responsive%20Layouts/challenge-01/)
